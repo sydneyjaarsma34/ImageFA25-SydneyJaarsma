@@ -5,11 +5,162 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      
+      <a-sky src="assets/editedsky.jpg"></a-sky>
+      <a-assets>
+          <a-asset-item id="myModel" src="models/16834_hand_v1_NEW.obj"></a-asset-item>
+            <a-asset-item id="myModelMtl" src="models/16834_hand_v1_NEW.mtl"></a-asset-item>
+          <a-asset-item id="bird" src="models/12212_Bird_v1_l2.obj"></a-asset-item>
+          <img id="bloodyTexture" src="assets/bloodyTexture.jpg">
+      </a-assets>
+        <a-obj-model src="#myModel" position="-150 -70 0" scale="10 10 10" rotation= "-45 90 0" color="black"></a-obj-model>
+        <a-obj-model src="#bird" material="src: #bloodyTexture" position="-60 -10 -80" scale="8 8 8" rotation= "-90 -180 0"></a-obj-model>
+
+      <!-- cube grid -->
+      <!-- crystal 1-4 textures -->
+    <a-box position="-100 -60 -100" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="-80 -20 -100" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="-60 -40 -100" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="-40 0 -100" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="-20 20 -100" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="0 40 -100" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="20 20 -100" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="40 60 -100" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="60 20 -100" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="80 0 -100" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="100 -20 -100" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+
+    <!-- Z = -80 row -->
+    <a-box position="-100 40 -80" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="-80 -20 -80" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="-60 60 -80" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="-40 -40 -80" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="-20 -20 -80" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="0 -60 -80" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="20 20 -80" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="40 0 -80" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="60 -40 -80" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="80 20 -80" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="100 0 -80" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+
+    <!-- Z = -60 row -->
+    <a-box position="-100 -20 -60" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="-80 0 -60" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="-60 20 -60" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="-40 30 -60" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="-20 40 -60" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="0 -20 -60" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="20 -10 -60" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="40 0 -60" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="60 -30 -60" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="80 40 -60" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="100 -40 -60" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+
+    <!-- Z = -40 row -->
+    <a-box position="-100 -30 -40" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="-80 20 -40" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="-60 10 -40" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="-40 0 -40" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="-20 -20 -40" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="0 -10 -40" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="20 -10 -40" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="40 10 -40" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="60 20 -40" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="80 30 -40" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="100 20 -40" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+
+    <!-- Z = -20 row -->
+    <a-box position="-100 20 -20" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="-80 -10 -20" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="-60 -10 -20" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="-40 0 -20" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="-20 -20 -20" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="0 -10 -20" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="20 10 -20" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="40 20 -20" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="60 0 -20" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="80 10 -20" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="100 0 -20" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+
+    <!-- Z = 0 row -->
+    <a-box position="-100 10 0" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="-80 0 0" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="-60 20 0" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="-40 -20 0" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="-20 -10 0" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="0 20 0" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="20 10 0" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="40 -10 0" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="60 0 0" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="80 0 0" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="100 -20 0" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+
+    <!-- Z = 20 row -->
+    <a-box position="-100 20 20" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="-80 10 20" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="-60 0 20" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="-40 0 20" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="-20 20 20" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="0 -10 20" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="20 0 20" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="40 -10 20" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="60 0 20" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="80 -20 20" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="100 30 20" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+
+    <!-- Z = 40 row -->
+    <a-box position="-100 -10 40" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="-80 0 40" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="-60 -30 40" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="-40 20 40" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="-20 10 40" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="0 0 40" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="20 -10 40" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="40 -20 40" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="60 30 40" rotation="45 45 0" src="assets/crystal12.jpg"></a-box>
+    <a-box position="80 0 40" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="100 -30 40" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+
+    <!-- Z = 60 row -->
+    <a-box position="-100 0 60" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="-80 10 60" rotation="45 45 0" src="assets/crystal12.jpg"></a-box>
+    <a-box position="-60 10 60" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="-40 0 60" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="-20 -30 60" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="0 0 60" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="20 -40 60" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="40 20 60" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="60 10 60" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="80 -30 60" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="100 40 60" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+
+    <!-- Z = 80 row -->
+    <a-box position="-100 0 80" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="-80 0 80" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="-60 40 80" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="-40 -20 80" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="-20 -30 80" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="0 0 80" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="20 10 80" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="40 40 80" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="60 0 80" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="80 -20 80" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="100 30 80" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+
+    <!-- Z = 100 row -->
+    <a-box position="-100 0 100" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="-80 0 100" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="-60 10 100" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="-40 0 100" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="-20 60 100" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="0 0 100" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="20 -40 100" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+    <a-box position="40 0 100" rotation="45 45 0" src="assets/crystal2.jpg"></a-box>
+    <a-box position="60 60 100" rotation="45 45 0" src="assets/crystal3.jpg"></a-box>
+    <a-box position="80 0 100" rotation="45 45 0" src="assets/crystal4.jpg"></a-box>
+    <a-box position="100 -60 100" rotation="45 45 0" src="assets/crystal1.jpg"></a-box>
+
+
     </a-scene>
   </body>
 </html>
